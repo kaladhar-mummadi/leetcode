@@ -1,6 +1,6 @@
 package src.easy;
 
-class Solution {
+class LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
     	int i = 0,j = 0;
     	int len = strs.length;
