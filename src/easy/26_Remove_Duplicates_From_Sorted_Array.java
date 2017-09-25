@@ -1,4 +1,6 @@
-class Solution {
+package src.easy;
+
+class RemoveDuplicates {
     public int removeDuplicates(int[] nums) {
         int i = 0, j = 0;
         int len = nums.length;

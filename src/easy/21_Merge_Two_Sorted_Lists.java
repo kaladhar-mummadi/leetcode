@@ -1,12 +1,12 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-class Solution {
+package src.easy;
+
+class ListNode {
+     int val;
+      ListNode next;
+      ListNode(int x) { val = x; }
+  }
+ 
+class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode resultHead = new ListNode(0);
         ListNode p = resultHead;
@@ -31,8 +31,7 @@ class Solution {
         		l2 = l2.next;
         		
         	}
-
-
+	        
         	
         	p = p.next;
         }

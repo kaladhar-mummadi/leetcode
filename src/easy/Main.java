@@ -5,8 +5,9 @@ import java.io.*;
 
 class Main {
 	public static void main(String[] args) {
-		TwoSum ts = new TwoSum();
-		
-		System.out.println("Hello, World");
+		PlusOne istr = new PlusOne();
+		int[] inp = {1,9};
+		int[] inde = istr.plusOne(inp);
+		System.out.print(inde);
 	}
 }

@@ -1,4 +1,7 @@
-class Solution {
+package src.easy;
+
+import java.util.*;
+class ValidParanthases {
 	public boolean isValid(String s) {
 		int str_len = s.length();
 		HashMap<Character, Character> braces = new HashMap<Character, Character>();
@@ -32,8 +35,6 @@ class Solution {
 				}
 			}
 		}
-		
-		
 		return result;
 	}
 }

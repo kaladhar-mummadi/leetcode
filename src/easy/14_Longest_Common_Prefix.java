@@ -1,3 +1,5 @@
+package src.easy;
+
 class Solution {
     public String longestCommonPrefix(String[] strs) {
     	int i = 0,j = 0;
