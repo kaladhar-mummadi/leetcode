@@ -2,7 +2,7 @@
 package src.easy;
 //  Definition for singly-linked list.
 
-class Solution {
+class RemoveDuplicatedFromSortedList {
 	public ListNode deleteDuplicates(ListNode head) {
 		ListNode p1 = head, p2 = head;
 		
