@@ -1,0 +1,7 @@
+class Solution:
+    # @param n, an integer
+    # @return an integer
+    def reverseBits(self, n):
+        bin_str = "{:032b}".format(n)
+        bin_str = bin_str[::-1]
+        return int(bin_str, 2)

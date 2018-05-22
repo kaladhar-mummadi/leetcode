@@ -1,0 +1,42 @@
+class Solution:
+    def cyclic_replacement(self, nums, k):
+        nums_len = len(nums)
+        count = 0
+        current = 0
+        k = k % (nums_len)
+
+        start = 0
+        while count < nums_len:
+            current = start
+            prev = nums[start]
+            while True:
+                current = (current + k) % nums_len
+                temp = nums[current]
+                nums[current] = prev
+                prev = temp
+                count += 1
+
+                if (start == current):
+                    break
+            start += 1
+
+    def reverse(self, nums, start, end):
+        nums[start:end] = nums[start:end][::-1]
+
+    def reverse_algo(self, nums, k):
+        nums_len = len(nums)
+        k = k % nums_len
+        self.reverse(nums, 0, nums_len)
+        self.reverse(nums, 0, k)
+        self.reverse(nums, k, nums_len)
+
+    def rotate(self, nums, k):
+        # self.cyclic_replacement(nums,k)
+        self.reverse_algo(nums, k)
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+
+
